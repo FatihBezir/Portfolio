@@ -1,0 +1,11 @@
+{
+    "welcome": "Welcome",
+    "welcomeMessage": "Cool terminal portfolio.",
+    "help": "Help",
+    "ls": "List",
+    "bio": "Show my bio information.",
+    "skill": "List all of my skills.",
+    "contact": "List all of the contacts.",
+    "about": "To see what is terminal portfolio.",
+    "clear": "To clear the history."
+}

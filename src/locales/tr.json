@@ -1,0 +1,11 @@
+{
+    "welcome": "Hosgeldiniz",
+    "welcomeMessage": "Çok havalı terminal portföyünüz.", 
+    "help": "Yardım",
+    "ls": "Listele",
+    "bio": "Biyografi bilgimi göster.",
+    "skill": "Tüm becerilerimi listele.",
+    "contact": "Tüm iletişim bilgilerini listele.",
+    "about": "Terminal portföyü görmek için.",
+    "clear": "Geçmişi temizlemek için."
+}
