@@ -85,7 +85,7 @@ export default function TerminalBox() {
       <Navbar onLanguageChange={handleLanguageChange} />
       <div
         className={`max-w-4xl mx-auto text-gray-300 text-xl p-2 overflow-y-auto ${
-          isMobile ? "h-[calc(100vh-56px)]" : "h-55vh"
+          isMobile ? "h-[calc(100vh-4rem)]" : "h-55vh"
         } bg-black bg-opacity-75 box terminal-box`}
       >
         <TodayDate />

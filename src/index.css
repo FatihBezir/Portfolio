@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Press+Start+2P&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +19,7 @@
 
 /* Terminal box alanını optimize etmek için */
 .terminal-box {
-  max-height: calc(100vh - 56px); /* Navbar yüksekliğini çıkartıyoruz */
+  max-height: calc(100vh - 4rem); /* Navbar yüksekliğini çıkartıyoruz */
   overflow-y: auto;
   width: 60%; /* Masaüstü için terminal box genişliği */
   margin: 0 auto; /* Ortaya hizalamak için */
