@@ -44,7 +44,8 @@
     font-size: 1rem; /* Yazı boyutunu mobilde küçültüyoruz */
   }
 
-  .terminal-box, .navbar {
+  .terminal-box,
+  .navbar {
     width: 100%; /* Mobilde genişliği tam ekran yapıyoruz */
     margin: 0; /* Mobilde ortalanmayı kaldırıyoruz */
     word-wrap: break-word; /* Uzun kelimeler sığmadığında alt satıra geçecek */
@@ -74,26 +75,28 @@
 }
 
 /* Kaydırma çubuğu çıktığında terminal kutusu tamamen ekrana sığacak */
-html, body {
+html,
+body {
   height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 /* Welcome yazısını mobilde ölçeklendirmek için */
 .welcome-text {
-    font-size: 5rem; /* Yazı boyutunu büyük ekranlar için belirliyoruz */
-    line-height: 1.1; /* Satır yüksekliğini ayarlıyoruz */
-    letter-spacing: 0.05em; /* Harfler arasındaki boşluğu azaltıyoruz */
-    white-space: nowrap; /* Kelimenin tek satıra sığması için */
-    overflow: hidden; /* Taşan metni gizliyoruz */
-    text-overflow: ellipsis; /* Taşan metni '...' ile gösteriyoruz */
+  font-size: 5rem; /* Yazı boyutunu büyük ekranlar için belirliyoruz */
+  line-height: 1.1; /* Satır yüksekliğini ayarlıyoruz */
+  letter-spacing: 0.05em; /* Harfler arasındaki boşluğu azaltıyoruz */
+  white-space: nowrap; /* Kelimenin tek satıra sığması için */
+  overflow: hidden; /* Taşan metni gizliyoruz */
+  text-overflow: ellipsis; /* Taşan metni '...' ile gösteriyoruz */
 }
 
 /* Mobil uyumluluk için ekstra ayarlar */
 @media (max-width: 768px) {
-    .welcome-text {
-        font-size: 3.5rem; /* Yazı boyutunu mobilde biraz daha küçültüyoruz */
-        letter-spacing: 0.02em; /* Mobilde harf aralıklarını daha da azaltıyoruz */
-        line-height: 1.1; /* Satır yüksekliği */
-    }
+  .welcome-text {
+    font-size: 3.5rem; /* Yazı boyutunu mobilde biraz daha küçültüyoruz */
+    letter-spacing: 0.02em; /* Mobilde harf aralıklarını daha da azaltıyoruz */
+    line-height: 1.1; /* Satır yüksekliği */
+  }
 }
