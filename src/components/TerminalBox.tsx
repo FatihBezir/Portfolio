@@ -38,7 +38,10 @@ export default function TerminalBox() {
   const handleSubmit = (cmd: string) => {
     setEnteredCmd((currentCmd) => [
       ...currentCmd,
-      { ...renderCmd(cmd, i18n.language), time: new Date().toLocaleTimeString() },
+      {
+        ...renderCmd(cmd, i18n.language),
+        time: new Date().toLocaleTimeString(),
+      },
     ]);
   };
 
@@ -80,7 +83,11 @@ export default function TerminalBox() {
   return (
     <div className={isMobile ? "relative h-screen w-full overflow-hidden" : ""}>
       <Navbar onLanguageChange={handleLanguageChange} />
-      <div className={`max-w-4xl mx-auto text-gray-300 text-xl p-2 overflow-y-auto ${isMobile ? "h-[calc(100vh-56px)]" : "h-55vh"} bg-black bg-opacity-75 box terminal-box`}>
+      <div
+        className={`max-w-4xl mx-auto text-gray-300 text-xl p-2 overflow-y-auto ${
+          isMobile ? "h-[calc(100vh-56px)]" : "h-55vh"
+        } bg-black bg-opacity-75 box terminal-box`}
+      >
         <TodayDate />
         <EnteredCmd enteredCmd={enteredCmd} />
         <CmdUserInput onSubmit={handleSubmit} language={i18n.language} />
